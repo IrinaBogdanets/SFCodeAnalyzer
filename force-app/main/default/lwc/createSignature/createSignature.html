@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title={Title}>
+        <div class="c-container"> 
+            <div style="width: 400px">     
+                <p class="slds-m-bottom_small"> 
+                    <canvas name="canvasItem" height="200" width="400px" style="border:2px solid rgb(136, 135, 135); background: transparent;"></canvas>
+                </p>
+                <p class="slds-m-bottom_small"> 
+                    <lightning-button variant="brand" label={labels.SaveLabel} onclick={saveSignature} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label={labels.ClearLabel} onclick={handleClearClick} class="slds-m-left_x-small"></lightning-button>
+                </p>
+            </div>       
+        </div>
+    </lightning-card>
+</template>
